@@ -1,0 +1,25 @@
+.app-header {
+    background-color: var(--clr1);
+    color: var(--clr1bg);
+    padding: 1em;
+}
+
+.app-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.clicked {
+    background-color: rgb(4, 47, 4);
+}
+
+@media(max-width: 720px) {
+    .app-header {
+        color: var(--clr2bg);
+    }
+}
+
+a {
+    padding: 5px;
+    border-radius: 5px;
+}
