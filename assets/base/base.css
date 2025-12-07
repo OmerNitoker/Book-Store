@@ -25,3 +25,7 @@ a {
 img, embed, video, object {
     max-width: 100%;
 }
+
+li {
+    list-style: none;
+}

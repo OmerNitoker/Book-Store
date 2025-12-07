@@ -1,0 +1,9 @@
+
+.about {
+    display: flex;
+    gap: 20px;
+}
+
+.about img {
+    max-width: 50%;
+}

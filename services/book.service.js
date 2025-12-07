@@ -1,7 +1,10 @@
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
+import { bookData } from '../data/book-data.js'
 
 const BOOK_KEY = 'bookDB'
+_createBooks()
+
 var gFilterBy = {
     txt: '',
     maxPrice: 0
@@ -71,10 +74,11 @@ function getNextBookId(bookId) {
 function _createBooks() {
     let books = utilService.loadFromStorage(BOOK_KEY)
     if (!books || !books.length) {
-        books = []
-        books.push(_createBook('1984', 60))
-        books.push(_createBook('The Catcher in the Rye', 80))
-        books.push(_createBook('The Lord of the Rings', 89))
+        books = bookData
+        // books = []
+        // books.push(_createBook('1984', 60))
+        // books.push(_createBook('The Catcher in the Rye', 80))
+        // books.push(_createBook('The Lord of the Rings', 89))
         utilService.saveToStorage(BOOK_KEY, books)
     }
 }
