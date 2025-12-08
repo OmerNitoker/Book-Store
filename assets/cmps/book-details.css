@@ -1,0 +1,9 @@
+
+.book-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-details img {
+    height: 80vh;
+}
